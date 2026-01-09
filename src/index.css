@@ -5,7 +5,6 @@
   --accent: #61dafb;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -95,13 +94,14 @@ body {
 
 .gradient-blob {
   position: absolute;
-  inset: 50% auto auto 50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
 
   width: min(900px, 120vw);
   height: min(900px, 120vw);
-
   border-radius: 50%;
+
   background: radial-gradient(
     circle at center,
     rgba(97, 218, 251, 0.35),
@@ -111,15 +111,15 @@ body {
 
   filter: blur(140px);
   opacity: 0.6;
+
   z-index: 1;
   pointer-events: none;
 }
-
-
 @media (max-width: 768px) {
   .gradient-blob {
-    width: 600px;
-    height: 600px;
+    width: min(600px, 140vw);
+    height: min(600px, 140vw);
+    filter: blur(120px);
   }
 }
 

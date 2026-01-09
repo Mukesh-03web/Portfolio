@@ -5,12 +5,12 @@ const name = "MUKESH S";
 export default function Home() {
   return (
     <section className="home">
-      
-      <motion.div
-        className="gradient-blob"
-        animate={{ y: [0, -40, 0] }}
-        transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-      />
+                
+              <motion.div
+            className="gradient-blob"
+            animate={{ opacity: [0.5, 0.7, 0.5] }}
+            transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+          />
 
       <div className="home-content">
         <motion.h1 className="Name">
